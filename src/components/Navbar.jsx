@@ -39,10 +39,10 @@ export default function Navbar({ isDark, onToggleTheme, search, onSearch }) {
         </div>
 
         <div className="ml-auto flex items-center gap-3">
-          <div className={`text-xs font-mono px-2.5 py-1 rounded-md border
+          {/* <div className={`text-xs font-mono px-2.5 py-1 rounded-md border
             ${isDark ? "text-slate-400 border-slate-700 bg-slate-800/60" : "text-slate-500 border-slate-200 bg-slate-50"}`}>
             v2.1.0
-          </div>
+          </div> */}
 
           <button
             onClick={onToggleTheme}
