@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* === DARK AG GRID === */
+.ag-theme-alpine.dark-theme {
+  --ag-background-color: transparent;
+  --ag-odd-row-background-color: rgba(255,255,255,0.012);
+  --ag-header-background-color: transparent;
+  --ag-border-color: rgba(148,163,184,0.14);
+  --ag-row-border-color: rgba(148,163,184,0.22);
+  --ag-row-hover-color: rgba(99,102,241,0.05);
+  --ag-selected-row-background-color: rgba(99,102,241,0.08);
+  --ag-header-foreground-color: #94a3b8;
+  --ag-foreground-color: #e2e8f0;
+  --ag-font-family: 'DM Sans', sans-serif;
+  --ag-font-size: 13px;
+  --ag-cell-horizontal-padding: 20px;
+  --ag-header-height: 48px;
+  --ag-row-height: 60px;
+  --ag-grid-size: 4px;
+  --ag-input-focus-border-color: #6366f1;
+  --ag-checkbox-checked-color: #6366f1;
+  --ag-input-border-color: rgba(148,163,184,0.52);
+  --ag-input-background-color: rgba(15,23,42,0.6);
+  --ag-floating-filter-height: 42px;
+}
+
+/* === LIGHT AG GRID === */
+.ag-theme-alpine.light-theme {
+  --ag-background-color: transparent;
+  --ag-odd-row-background-color: rgba(99,102,241,0.012);
+  --ag-header-background-color: transparent;
+  --ag-border-color: rgba(15,23,42,0.08);
+  --ag-row-border-color: rgba(15,23,42,0.05);
+  --ag-row-hover-color: rgba(15,23,42,0.025);
+  --ag-selected-row-background-color: rgba(99,102,241,0.06);
+  --ag-header-foreground-color: #94a3b8;
+  --ag-foreground-color: #1e293b;
+  --ag-input-background-color: #ffffff;
+  --ag-input-border-color: rgba(15,23,42,0.12);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* AG Grid base resets */
+.ag-theme-alpine {
+  width: 100%;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: none !important;
+  border-radius: 0;
+  background: transparent;
+}
+
+.ag-theme-alpine .ag-header {
+  border-bottom: 1px solid var(--ag-border-color);
+  background: transparent;
+}
+
+.ag-theme-alpine .ag-header-cell-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.ag-theme-alpine .ag-header-cell {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ag-theme-alpine .ag-cell {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: normal;
+}
+
+.ag-theme-alpine .ag-row {
+  transition: background 0.12s ease;
+}
+
+.ag-theme-alpine .ag-floating-filter {
+  background: transparent;
+  border-bottom: 1px solid var(--ag-border-color);
+}
+
+.ag-theme-alpine .ag-floating-filter-input {
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.ag-theme-alpine .ag-paging-panel {
+  display: none; /* using custom pagination */
+}
+
+.ag-theme-alpine .ag-body-horizontal-scroll {
+  background: transparent;
+}
+
+/* Scrollbar */
+.scrollbar-thin::-webkit-scrollbar { width: 4px; height: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(148,163,184,0.2); border-radius: 99px; }
+
+
+.font-700 { font-weight: 700; }
